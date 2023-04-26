@@ -1,0 +1,96 @@
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+C:\Users\pashk\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+E:\DriveEP\OneDrive - EPAM\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+C:\Users\MegaNotik\Downloads\Projects\AuraSearch\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+E:\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+E:\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+E:\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+E:\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+C:\Users\server\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\AuraSearch\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\BotFrame\AuraSearch\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\bin\Debug\net6.0\AuraSearch.deps.json
+C:\Users\server\Desktop\AuraSearch\bin\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\bin\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\refint\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\AuraSearch\obj\Debug\net6.0\ref\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\SearchLib\bin\Debug\net6.0\AuraSearch.deps.json
+C:\Users\server\Desktop\AuraSearch\SearchLib\bin\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\SearchLib\bin\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.csproj.AssemblyReference.cache
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.AssemblyInfoInputs.cache
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.AssemblyInfo.cs
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.csproj.CoreCompileInputs.cache
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\refint\AuraSearch.dll
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\AuraSearch.pdb
+C:\Users\server\Desktop\AuraSearch\SearchLib\obj\Debug\net6.0\ref\AuraSearch.dll

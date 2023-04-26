@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "tjta5sEBClfTB22vweL5A6sfvQd7p7R+Y2KHsjqm2gaYDuPbAowR2JxbJuh/cInV96keubUdL/EsmQpAd7HwiA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\server\\Desktop\\AuraSearch\\AuraSearch\\AuraSearch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\server\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\server\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\server\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\server\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\server\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
