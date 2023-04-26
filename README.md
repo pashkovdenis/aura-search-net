@@ -110,6 +110,7 @@ Register Dependencies: (with your implementation for repositories)
 
 Also you can adjust settings related to indexing, search thresshold 
 
+```
    public sealed class Settings
     {
         public double DefNeuronDom { get; set; } = 0.02d;
@@ -122,5 +123,5 @@ Also you can adjust settings related to indexing, search thresshold
 
         public int WordsToIndexThresshold = 15; 
     } 
-
+```
             
