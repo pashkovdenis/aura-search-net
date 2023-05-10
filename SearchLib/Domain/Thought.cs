@@ -2,8 +2,7 @@
 
 namespace AuraSearch.Domain
 {
-  
-
+   
     public sealed class Thought : IEntity
     {
         public Guid Id { get; set; } = Guid.NewGuid();

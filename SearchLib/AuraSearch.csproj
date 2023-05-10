@@ -4,6 +4,13 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Aura Search</Title>
+    <Description>Lightweight search library for .net</Description>
+    <Copyright>pashkovdenis@gmail.com</Copyright>
+    <PackageIcon>search.png</PackageIcon>
+    <PackageTags>search;library;net;weight</PackageTags>
+    <PackageReleaseNotes>Iniutial release</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,7 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\Index\Strategy\" />
+    <None Include="..\..\..\Downloads\search.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

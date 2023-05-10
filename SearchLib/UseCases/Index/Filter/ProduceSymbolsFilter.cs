@@ -21,14 +21,7 @@ namespace AuraSearch.UseCases.Index.Filter
             _logger = loggerFactory.CreateLogger<ProduceSymbolsFilter>();
             _settings = settings?.Value ?? new Settings();
         }
-
-        /// <summary>
-        /// Produce input symbols 
-        /// </summary>
-        /// <param name="input"></param>
-        /// <param name="context"></param>
-        /// <param name="cancellationToken"></param>
-        /// <returns></returns>
+        
         public async ValueTask FilterAsync(
             StoreIndexRequest input,
             Context context,
@@ -52,7 +45,6 @@ namespace AuraSearch.UseCases.Index.Filter
                 var existingWords = wordsAll.Where(x => words.Contains(x.Token)).DistinctBy(x=>x.Token).ToList();
 
                 var newSymbolDominance =  GetSymbolWeight(1);
-
 
                 var tasks = new List<Task>();
 
@@ -91,34 +83,7 @@ namespace AuraSearch.UseCases.Index.Filter
                     existingWord.Count++;
                     tasks.Add(_wordsRepository.Update(existingWord));
                 }
-
-
-                var date = DateTime.Now;
-
-                result.Add(new Symbol
-                {
-                    Weight = _settings.DefNeuronDom,
-                    Word = date.Year.ToString()
-                });
-
-                result.Add(new Symbol
-                {
-                    Weight = _settings.DefNeuronDom,
-                    Word = date.Month.ToString()
-                });
-
-                result.Add(new Symbol
-                {
-                    Weight = _settings.DefNeuronDom,
-                    Word = date.Day.ToString()
-                });
-
-                result.Add(new Symbol
-                {
-                    Weight = _settings.DefNeuronDom,
-                    Word = date.Hour.ToString()
-                });
-
+  
                 payload.Symbols = result;
 
                 _logger.LogInformation($"Added {result.Count} symbols");

@@ -13,7 +13,6 @@
 
         public double TotalScore { get; set; }
 
-        public override string ToString() 
-            => $"Match: {MatchCount}, DisMatch: {DismatchCount}, TotalScore {TotalScore}";
+        public override string ToString()   => $"Match: {MatchCount}, DisMatch: {DismatchCount}, TotalScore {TotalScore}";
     }
 }

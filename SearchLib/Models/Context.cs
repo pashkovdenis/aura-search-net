@@ -1,5 +1,6 @@
 ﻿using AuraSearch.Utils;
 using AuraSearch.ValueObject;
+using System.Security.Cryptography.X509Certificates;
 
 namespace AuraSearch.Models
 {
@@ -15,7 +16,7 @@ namespace AuraSearch.Models
 
         public void Refresh()
         {
-            var result = contextEntry.Select(x => x.Weight).ToList();
+            var result = contextEntry.Where(x=>x.Weight > 0).Select(x => x.Weight).ToList();
             var index = 0.1d;
 
             for (var x = 0; x < result.Count; x++)
@@ -55,7 +56,7 @@ namespace AuraSearch.Models
                 AvgScore = avg
             });
 
-            var scoreVector = contextEntry.Select(x => x.Weight).ToArray();
+            var scoreVector = contextEntry.Where(x=>x.Weight > 0).Select(x => x.Weight).ToArray();
             
             if (scoreVector.Count() == 1)
             {

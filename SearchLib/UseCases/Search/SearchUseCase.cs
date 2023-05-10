@@ -19,7 +19,7 @@ namespace AuraSearch.UseCases.Search
         private readonly IEnumerable<IInputFilter<SearchRequest>> _filters;
         private readonly IEnumerable<IResultFilter> _resultFilters;
         private readonly Settings _settings;
-
+         
         public SearchUseCase(
             ISearchOutput searchOutput,
             IThoughtRepository thoughtRepository,
@@ -52,94 +52,95 @@ namespace AuraSearch.UseCases.Search
 
             if (context.ClientIdentifier != input.ClientIdentifier)
             {
-                throw new InvalidOperationException("Context identifier and client id mistmatch");
+                throw new InvalidOperationException("Context identifier and client id mistmatch"); 
             }
 
-            var thoughts = await _thoughtRepository.GetPreMatchBySymbols(input.KeyWords, context.ClientIdentifier, cancellationToken);
-
+            var thoughts = await _thoughtRepository.GetPreMatchBySymbols(input.KeyWords, context.ClientIdentifier, cancellationToken); 
+            
             if (!thoughts.Any())
             {
                 _searchOutput.Error("No results found");
-                return;
+                return; 
             }
-
-            var results = ScoreMatches(thoughts, input, context, cancellationToken);
+             
+            var results = ScoreMatches(thoughts, input,context, cancellationToken);
 
             var vector = new ResultVector
             {
                 RequestId = input.RequestId,
-                Succeeded = results.Count > 0,
-                Results = results.OrderByDescending(x => x.Score).ToList()
+                Succeeded = results.Count > 0, 
+                Results = results.OrderByDescending(x=>x.Score).ToList()
             };
 
             if (_resultFilters != null && _resultFilters.Any())
             {
-                foreach (var filter in _resultFilters)
-                {
-                    await filter.FilterAsync(vector, context, cancellationToken);
+                foreach(var filter in _resultFilters) 
+                { 
+                  await filter.FilterAsync(vector, context, cancellationToken);
                 }
             }
 
             _searchOutput.Ok(new Response.ResultResponse
             {
-                ClientId = input.ClientIdentifier,
-                RequestId = input.RequestId,
-                Result = vector
+                 ClientId = input.ClientIdentifier,
+                 RequestId= input.RequestId,
+                 Result = vector
             });
         }
 
         private List<ResultValue> ScoreMatches(
-            List<Thought> thoughts,
+            List<Thought> thoughts, 
             SearchRequest request,
-            Context context,
+            Context context, 
             CancellationToken cancellationToken)
         {
             if (cancellationToken.IsCancellationRequested)
             {
                 throw new OperationCanceledException();
             }
-
+             
             var contextEntries = context.GetContextEntries();
             var keywords = request.KeyWords;
-            var results = new List<ResultValue>();
-
-            foreach (var thought in CollectionsMarshal.AsSpan<Thought>(thoughts))
+            var results = new List<ResultValue>();  
+            
+            foreach(var thought in CollectionsMarshal.AsSpan<Thought>(thoughts))
             {
 
                 var resultPoint = new ResultValue { Thought = thought };
                 var set = new List<(ThoughtMetric metrics, Idea idea, double score)>();
 
-                foreach (var idea in thought.Ideas)
+                foreach(var idea in thought.Ideas)
                 {
                     var compared = _symbolComparer.Compare(keywords, idea.Symbols);
 
                     var scoreThoughtBoost = contextEntries.Where(x => x.Label == thought.Id.ToString()).Sum(x => x.Score);
 
-                    var matchedContextSum = idea.Symbols.Where(x => contextEntries.Any(c => c.Label == x.Word)).Sum(x => x.Weight) + scoreThoughtBoost;
+                    var matchedContextSum = idea.Symbols.Where(x => contextEntries.Any(c => c.Label == x.Word)).Sum(x=>x.Weight) + scoreThoughtBoost;
 
                     var score = MathUtils.ActivationFunc(compared + matchedContextSum + thought.Boost);
-
-                    if (score > context.GetThresshold(request.Thresshold > 0 ? request.Thresshold : _settings.ActivationThress) + Math.Sqrt(request.KeyWords.Length / 100))
-                    {
+                    var thresshold = context.GetThresshold(request.Thresshold > 0 ? request.Thresshold : _settings.ActivationThress) + Math.Atan(request.KeyWords.Length / 100); 
+                    // Math Sqrt: 
+                    if (score > thresshold)
+                    { 
                         set.Add((thought.Metrics, idea, score));
 
-                        var contextAddedSymbols = idea.Symbols.OrderByDescending(x => x.Weight).Take(_settings.WordCounterThresshold);
-
+                        var contextAddedSymbols  = idea.Symbols.OrderByDescending(x => x.Weight).Take(_settings.WordCounterThresshold);   
+                        
                         EventDispatcher.Instance?.Dispatch(new ActivationEvent
                         {
-                            ThoughtId = thought.Id,
-                            IdeaId = idea.IdeaId,
-                            Score = score
-                        });
+                             ThoughtId = thought.Id,
+                             IdeaId = idea.IdeaId,
+                             Score = score
+                        }); 
                     }
                     else
                     {
                         EventDispatcher.Instance?.Dispatch(new MistmatchEvent
                         {
-                            IdeaId = idea.IdeaId,
-                            ThoughtId = thought.Id
+                             IdeaId = idea.IdeaId,
+                             ThoughtId = thought.Id                            
                         });
-                    }
+                    }                    
                 }
 
                 if (set.Any())
@@ -153,7 +154,8 @@ namespace AuraSearch.UseCases.Search
                 }
             }
 
-            AddToContext(results, context);
+
+            AddToContext(results.Take(_settings.WordCounterThresshold).ToList(), context); 
 
             return results;
         }
@@ -167,20 +169,7 @@ namespace AuraSearch.UseCases.Search
                     result.Score,
                     result.Thought.Metrics.MatchCount,
                     result.Thought.Metrics.DismatchCount,
-                    result.Thought.Metrics.AvgScore);
-
-                var words = result.TopIdea.Symbols
-                    .OrderByDescending(x => x.Weight).Take(results.Count).ToList();
-
-                foreach (var word in CollectionsMarshal.AsSpan(words))
-                {
-
-                    context.AddToContext(word.Word,
-                     word.Weight,
-                     result.Thought.Metrics.MatchCount,
-                     result.Thought.Metrics.DismatchCount,
-                     result.Thought.Metrics.AvgScore);
-                }
+                    result.Thought.Metrics.AvgScore); 
             }
         }
     }
